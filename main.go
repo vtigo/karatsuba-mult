@@ -73,10 +73,8 @@ func intLen(n *big.Int) int {
 		return 1
 	}
 	
-	// Clone n so we don't modify the original
 	temp := new(big.Int).Set(n)
 	
-	// Count the number of digits
 	count := 0
 	ten := big.NewInt(10)
 	zero := big.NewInt(0)
